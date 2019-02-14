@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jack Burns">
+    <meta name="description" content="Digital Futures is an event for students to showcase their skills to employers within the creative industries, hosted at the University of the West of Scotland Paisley campus">
+    <meta property="og:title" content="Digital Futures - meet your future at UWS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jburns.co.uk/other-sites/digitalfutures/">
+    <link rel="shortcut icon" type="image/png" href="fav.ico"/>
+
+    <title>Digital Futures - meet your future at UWS</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/starter-template.css" rel="stylesheet">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <script>
+        // Set the date we're counting down to
+var countDownDate = new Date("Apr 17, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+    
+  </head>
+
+  <body>
+      
+      <header class="sticky">
+          
+          
+          <div class="logos">
+            <img class="logo" src="img/pink2.png">
+              <div class="partner-center">
+                <p class="partnership partner-text">In partnership with</p><div class="partnership vert-hr"></div><img class="partnership uws-logo" src="img/uws-sponsor.jpg">
+              </div>
+          </div>
+          
+          <div class="nav">
+            <ul>
+                <a href=""><li id="nav-home"><p class="nav-item nav-item-selected">HOME</p></li></a>  
+                <li><div class="dropdown">
+                    <p class="nav-item" class="dropbtn">PORTFOLIOS</p>
+                    <div class="dropdown-content">
+                        <a href="#portfolio-section">All Portfolios</a>
+                        <a href="web-dev.html">Web &amp; Mobile Development</a>
+                        <a href="animation.html">Computer Animation</a>
+                        <a href="games-dev.html">Games Development</a>
+                    </div>
+                </div></li>
+                <a href="#sponsor-section"><li id="nav-spon"><p class="nav-item">EVENT CHAMPIONS</p></li></a>
+                <a href="#gh-section"><li id="nav-here"><p class="nav-item">GET HERE</p></li></a>
+                <a href="#contact-section"><li id="nav-cont"><p class="nav-item">CONTACT US</p></li></a>
+            </ul>
+          </div>
+          
+      </header>
+    <main>
+        
+    <div class="content">
+            
+            <div class="carousel-slides">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="filter">
+                            <div class="slide1"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="filter">
+                            <div class="slide2"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="filter">
+                            <div class="slide3"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="filter">
+                            <div class="slide4"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="filter">
+                            <div class="slide5"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="filter">
+                            <div class="slide6"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+        
+        <div class="countdown-section">
+            <div class="countdown-wrap">
+                <p class="until-head">EVENT COUNTDOWN</p>
+                <p id="countdown"></p>
+                <p class="until-text">Date - <span class="specialword">April 17th 2019</span> / Room - <span class="specialword">D133</span> / Time - <span class="specialword">11:00 - 15:00</span></p>
+            </div>
+        </div>
+        
+                <a href="#" class="sf-back-to-top"><span class="arrow"></span></a>
+                        
+              
+        
+        <div id="about-section" class="about-section container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-1 col-sm-0"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-12 about-padding">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+                            <div class="col-lg-8 col-md-10 col-sm-12">
+                                <div class="about-df">
+                                    <h1 class="about-head">About Digital Futures</h1><br>
+                                    <ul>
+                                        <li class="bull-points">Creative Industries showcasing and networking event held at the University of the West of Scotland (Paisley Campus) on the 17th of April 2019.</li><br>
+                                        <li class="bull-points">Provides undergraduate students with the opportunity to show case their work to potential employers.</li><br>
+                                        <li class="bull-points">Useful B2B networking event for companies in the Creative Industries to meet one another.</li><br>
+                                        <li class="bull-points">Allows students to network with people in the Creative Industries community and receive feedback and guidance about their work.  </li><br>
+                                    </ul>
+                                </div>
+                                
+                                <div class="showcase-event">
+                                    <h1 class="about-head">Creative Showcasing Event</h1><br>
+                                    <ul>
+                                        <li class="bull-points">Undergraduate students from Computer Animation Arts, Computer Games Development and Web and Mobile Development showcasing their portfolios.</li><br>
+                                        <li class="bull-points">Students will provide an overview of how they developed their work in addition to show casing their skill sets.</li><br>
+                                    </ul>
+                                </div>
+                                
+                                <div class="showcase-event">
+                                    <h1 class="about-head">Attending Digital Futures</h1><br>
+                                    <ul>
+                                        <li class="bull-points">Offers a sound opportunity for potential employers to headhunt talented students and make connections with them.</li><br>
+                                        <li class="bull-points">Potential recruiters can meet other individuals from different Creative Industry organisations and backgrounds. </li><br>
+                                        <li class="bull-points">Good opportunity to support and enjoy the ongoing creativity and development in an industry and that is continuously evolving and expanding. </li><br>
+                                        <li class="bull-points">Opportunity to know more about the Creative Industry programmes run at UWS</li><br>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-1 col-sm-12"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <div class="col-lg-2 col-md-1 col-sm-0"></div>
+                </div>
+        </div>
+        
+
+        <div id="portfolio-section" class="portfolio-section container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-0"></div>
+                <div class="col-lg-10 col-md-12">
+                    <h2 class="port-title">Student Portfolios</h2>
+                    <hr align="left" class="port-underline">
+                    
+                    <div class="flex-container tiles-wrap">
+                            <a href="profiles/kamil-p.html"><div class="port-div div1">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Kamil Witonski</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/leon-p.html"><div class="port-div div2">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Leon Irving</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/ken-p.html"><div class="port-div div3">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Kenneth Yorke</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/jack-p.html"><div class="port-div div4">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Jack Burns</p>
+                                        <hr>
+                                        <p class="tile-subhead">Web &amp; Mobile Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/darren-p.html"><div class="port-div div5">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Darren Griffths</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/dylan-p.html"><div class="port-div div6">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Dylan Gilchrist</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/julie-p.html"><div class="port-div div7">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Julie Black</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/calum.html"><div class="port-div div16">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Calum Murray</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                            <a href="profiles/ross-p.html"><div class="port-div div8">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Ross Kilpatrick</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/damian-p.html"><div class="port-div div9">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Damian Slocombe</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/connor-p.html"><div class="port-div div10">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Connor Moffat</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/ivona-p.html"><div class="port-div div11">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Ivona Narkevic</p>
+                                        <hr>
+                                        <p class="tile-subhead">Animation</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/hesh-p.html"><div class="port-div div12">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Hesham Saqqar</p>
+                                        <hr>
+                                        <p class="tile-subhead">Web &amp; Mobile Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/alasdair-p.html"><div class="port-div div13">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Alasdair Hendry</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/jacob-p.html"><div class="port-div div14">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Jacob Czaja</p>
+                                        <hr>
+                                        <p class="tile-subhead">Web &amp; Mobile Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/steven-p.html"><div class="port-div div15">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Steven O'Neill</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/stef-p.html"><div class="port-div div17">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Stefan Lewis</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/samuel-p.html"><div class="port-div div18">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">Samuel Yerokun</p>
+                                        <hr>
+                                        <p class="tile-subhead">Computer Animation</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        <a href="profiles/george-p.html"><div class="port-div div19">
+                                <div class="tint">
+                                    <div class="tile-content">
+                                        <p class="tile-header">George Iordanov-Nalbantov</p>
+                                        <hr>
+                                        <p class="tile-subhead">Games Development</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                    </div>
+                </div>
+                    
+            </div>
+            
+            <h2 class="category-title">Portfolio Categories</h2>
+            <hr class="category-underline">
+             <div class="flex-container tiles-wrap">
+                 <a href="web-dev.html"><div class="port-category web-tile">
+                                <div class="tint-cat">
+                                    <div class="tile-content-port">
+                                        <p class="tile-header">Web &amp; Mobile Development</p>
+                                        <hr>
+                                        <p class="tile-subhead">Portfolios</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                 
+                 <a href="animation.html"><div class="port-category anim-tile">
+                                <div class="tint-cat">
+                                    <div class="tile-content-port">
+                                        <p class="tile-header">Computer Animation</p>
+                                        <hr>
+                                        <p class="tile-subhead">Portfolios</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                 
+                 <a href="games-dev.html"><div class="port-category game-tile">
+                                <div class="tint-cat">
+                                    <div class="tile-content-port">
+                                        <p class="tile-header">Games Development</p>
+                                        <hr>
+                                        <p class="tile-subhead">Portfolios</p>
+                                    </div>
+                                </div>
+                            </div></a>
+                 
+                    </div>
+            <div class="col-lg-1 col-md-0"></div>
+        </div>
+        
+        <div id="sponsor-section" class="sponsor-section container-fluid">
+            <h2 class="sponsor-head">Event Champions</h2>
+            <hr class="spons-underline">
+            <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                            <div class="sponsor-wrap">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sponsor-img-wrap">
+                            <a target="_blank" href="https://www.fixfx.co.uk/" target="_blank"><img class="sponsor-img left-img" src="img/fixlogo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sponsor-img-wrap">
+                            <a target="_blank" href="https://spctr.co.uk/" target="_blank"><img class="sponsor-img" src="img/spectrelogo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sponsor-img-wrap">
+                            <a target="_blank" href="http://www.touzietyke.com/" target="_blank"><img class="sponsor-img sponsor-img-touzie right-img" src="img/touzie-logo.png"></a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sponsor-img-wrap">
+                            <a target="_blank" href="https://www.linkedin.com/company/ammoniteanimation/" target="_blank"><img class="sponsor-img sponsor-img-touzie" src="img/ammonite.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sponsor-img-wrap">
+                            <a target="_blank" href="http://www.collabor8-studio.co.uk/" target="_blank"><img class="sponsor-img sponsor-img-touzie right-img" src="img/collabor8-logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-2"></div>
+            </div>
+        </div>
+        
+        <div id="gh-section" class="gh-section">
+            <div class="gh-header container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-0"></div>
+                <div class="col-lg-8 col-md-12">
+                    
+                        <h2 class="gh-head">Get Here</h2>
+                        <hr class="gh-underline">
+                    
+                        <div class="map-wrapper">
+                            <!--<div class="googlemap"></div>-->
+                            <iframe class="googlemap" width="1144" height="692" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnYJelkdJiEgRL-SbAa9-Go4&key=AIzaSyDsw2Y-ctfIrd-XDILFLvTl3s-OOtEdZy4" allowfullscreen></iframe>
+                        </div>
+            
+                <div class="col-lg-2 col-md-0"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div id="contact-section" class="contact-section">
+            <div class="contant-wrapper container-fluid">
+                <div class="row">
+                <div class="col-lg-2 col-md-0"></div>
+                <div class="col-lg-8 col-md-12">
+                    
+                        <h2 class="gh-head contact-head">Contact Us</h2>
+                        <hr class="contact-underline">
+                    
+                        <div class="form-wrapper">
+                                               
+                        <p class="form-text">Got some questions about the event? Shoot us an email and we'll be happy to answer them!</p>
+                            
+                            <form method="post" name="contact_form"
+                                    action="form-handler.php">
+                                    <input type="text" name="name" class="t-boxes" placeholder="Name">
+                                    <input type="text" name="email" class="t-boxes" placeholder="Email">
+                                    <select class="t-boxes" name="subject">
+                                        <option selected="true" disabled="disabled">Subject</option>
+                                        <option class="t-boxes">General Enquiry</option>
+                                        <option class="t-boxes">Date and Time</option>
+                                        <option class="t-boxes">Other</option>
+                                    </select>
+                                    <textarea name="message" class="t-boxes t-area" placeholder="Message"></textarea>
+                                    <input type="submit" value="Submit" class="sub-btn">
+                            </form>
+                        </div>
+            
+                <div class="col-lg-2 col-md-0"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+
+    </main>
+      
+    <footer>
+        <div class="footer-wrapper">
+            <p class="footer-name">Designed and Developed by Jack Burns</p>
+            <ul class="footer-icon-list">
+                <a target="_blank" href="https://www.jburns.co.uk"><li class="footer-icon"><img src="img/jb-footer.png"></li></a>
+                <a target="_blank" href="https://www.instagram.com/brnsy_/"><li class="footer-icon"><img src="img/instagram-footer.png"></li></a>
+                <a target="_blank" href="https://twitter.com/_Burrnsyy_"><li class="footer-icon"><img src="img/twitter-footer.png"></li></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jack-burns-ba8536154/"><li class="footer-icon"><img src="img/linkedin-footer.png"></li></a>
+            </ul>
+        </div>  
+    </footer>
+
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</div>
+</body></html>

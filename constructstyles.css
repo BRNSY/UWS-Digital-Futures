@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+
+.digger{
+    width: auto;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h1{
+    font-family: "Quicksand Bold", sans-serif;
+    font-size: 50px;
+}
+
+p{
+    font-family: "Quicksand Regular", sans-serif;
+    font-size: 20px;
+}

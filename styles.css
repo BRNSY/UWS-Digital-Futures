@@ -1,0 +1,2276 @@
+body{
+    padding-top: 0px;
+    background-color: #160620;
+    height: 100%;
+}
+
+.countdown-section{
+    height: 160px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c20472+0,960448+100 */
+background: #c20472; /* Old browsers */
+background: -moz-linear-gradient(45deg, #c20472 0%, #960448 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #c20472 0%,#960448 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #c20472 0%,#960448 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c20472', endColorstr='#960448',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.uws-wrapper{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.specialword{
+    text-decoration: underline;
+}
+
+.vert-hr{
+    border-left:1px solid #000;height:40px;margin-left: 20px;opacity: 0.2;position: relative;top: 50%;transform: translateY(25%);
+}
+
+.partnership{
+    display: inline-block;
+}
+
+.uws-logo{
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.partner-center {
+    text-align: center;
+}
+
+.partner-text{
+    font-size: 20px;
+}
+
+#countdown{
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Open sans bold", sans-serif;
+    font-size: 70px;
+    color: white;
+    margin-top: -50px;
+}
+
+.until-text{
+    text-align: center;
+    font-family: "Open sans bold", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: -30px;
+}
+
+.until-head{
+    text-align: center;
+    font-family: "Open sans bold", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+}
+
+.top-button{
+    border-radius: 30px;
+    background-color: #C20472;
+    background-image: url(img/top-btn.png);
+    height: 50px;
+    width: 50px;
+    display: none;
+    float: right;
+    transition: all 3s;
+}
+
+.top-button-display {
+    border-radius: 30px;
+    background-color: #C20472;
+    background-image: url(img/top-btn.png);
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: right;
+}
+
+.top-button-wrapper {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    float: right;
+}
+
+.sf-back-to-top {
+    background-image: url(img/top-btn.png);
+    display: none;
+    z-index: 999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+    transition: all .2s;
+} 
+
+a:hover { 
+    color: #BA0685; 
+    text-decoration: none;
+} 
+
+.nav a{
+    text-decoration: none;
+    color: #2B103B;
+}
+
+header{
+    background-color: white;
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.25)!important;
+-moz-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.25)!important;
+box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.25)!important;
+    z-index: 1;
+    position: relative;
+    height: 270px;
+}
+
+.content{
+    z-index: 0;
+    position: relative;
+    height: 100%;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 120px;
+    width: auto;
+}
+.nav{
+    margin-left: -15px;
+    margin-top: 15px;
+}
+
+.nav ul{ 
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.nav ul li{ 
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav ul li .nav-item{
+    border-bottom: 1px solid transparent;
+    padding-bottom: 10px;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+
+.nav ul li .nav-item-selected{
+    border-bottom: 1px solid #F40085;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.nav ul li .nav-item:hover{
+    cursor: pointer;
+    color: #F40085;
+    border-bottom: 1px solid #F40085;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #2B103B;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #FFE5F3;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.filter{
+    background-color: #2B103B;
+}
+
+.slide2{
+    background-image: url(img/alien.png);
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.slide4{
+    background-image: url(img/mantis.png);
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.slide5{
+    background-image: url(img/jeepers.png);
+    background-size: cover;
+    background-position: top;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.slide6{
+    background-image: url(img/pennywise.png);
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.slide1{
+    background-image: url(img/ivo.png);
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.slide3{
+    background-image: url(img/ivonaart.png);
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    opacity: 0.7;
+}
+
+.about-section{
+    background: #160620;
+}
+
+.about-content{
+    background: #160620;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#190626+0,230934+100 */
+    background: #190626; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #190626 0%, #230934 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #190626 0%,#230934 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #190626 0%,#230934 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#190626', endColorstr='#230934',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-box-shadow: 3px 10px 11px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 10px 11px 0px rgba(0,0,0,0.2);
+    box-shadow: 3px 10px 11px 0px rgba(0,0,0,0.2);
+    border-bottom-right-radius: 94px;
+    border-bottom-left-radius: 94px;
+}
+
+.col-lg-2{
+}
+
+.about-text{
+    padding-top: 80px;
+    padding-bottom: 50px;   
+}
+
+.about-head{
+    font-size: 25px;
+    color: white;
+    font-family: 'Quicksand Medium', sans-serif;
+}
+
+.bull-points{
+    color: white;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-button{
+    background: transparent;
+    border: 1px solid;
+    border-color: #00DCCA;
+    border-radius: 20px;
+    width: 240px;
+    height: 50px;
+    font-size: 18px;
+    color: #00DCCA;
+    margin-left: 15px;
+    -webkit-transition: background 0.1s; /* Safari */
+    transition: background 0.1s;
+}
+
+.about-button:hover{
+    background: #00DCCA;
+    color: #2B103B;
+    cursor: pointer;
+}
+
+.showcase-event{
+    margin-top: 30px;
+}
+
+.sec-tile{
+    width: 300px;
+    height: 150px;
+    background: red;
+    margin-top: 50px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 7px 10px 17px -6px rgba(0,0,0,0.49);
+    -moz-box-shadow: 7px 10px 17px -6px rgba(0,0,0,0.49);
+    box-shadow: 7px 10px 17px -6px rgba(0,0,0,0.49);
+    transition: transform 0.2s;
+    -webkit-border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    border-radius: 20px;
+}
+
+.left-tile{
+    float: right;
+}
+
+.right-tile{
+    float: left;
+}
+
+.sec-tile:hover {
+  transform: scale(0.95);
+    cursor: pointer;
+}
+
+.tiles{
+    margin-top: 100px;
+}
+
+.cat-title{
+    padding-top: 80px;
+    font-size: 24px;
+    color: #f3f3f3;
+    font-family: 'Quicksand Medium', sans-serif;
+    text-align: center;
+}
+
+.cat-underline{
+    width: 10%;
+    border-color: white;
+    background-color: white;
+    color: white;
+    height: 1px;
+}
+
+.anim-tile{
+    background-image: url(img/anim.png);
+    background-size: cover;
+}
+
+.web-tile{
+    background-image: url(img/webmob.png);
+    background-size: cover;
+}
+
+.game-tile{
+    background-image: url(img/games.png);
+    background-size: cover;
+}
+
+.des-tile{
+    background-image: url(img/game-des.png);
+    background-size: cover;
+}
+
+.port-title{
+    padding-top: 85px;
+    color: white;
+    margin-top: 30px;
+    font-size: 39px;
+    font-family: 'Quicksand Medium', sans-serif;
+}
+
+.category-title{
+    padding-top: 85px;
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Quicksand Regular', sans-serif;
+    text-align: center;
+}
+
+.category-underline{
+    border: 1px solid #F40085;
+    width: 8%;
+    align-content: left;
+}
+
+.port-underline{
+    border: 2px solid #F40085;
+    width: 20%;
+}
+
+.portfolio-section{
+    background: #160620;
+    padding-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.port-div {
+    background-image: url(img/heychat-screen.png);
+    background-size: cover;
+    margin: 10px;
+    height: 220px;
+    width: 270px;
+    -webkit-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.div1{
+    background-image: url(img/driftgame.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div2{
+    background-image: url(img/leongun.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div3{
+    background-image: url(img/artwaddle.png);
+    background-size: cover;
+}
+
+.div4{
+    background-image: url(img/profile-imgs/jack-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div5{
+    background-image: url(img/darrenwarehouse.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div6{
+    background-image: url(img/dylanspace.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div7{
+    background-image: url(img/profile-imgs/julie-2.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div8{
+    background-image: url(img/rossgame.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div9{
+    background-image: url(img/damiengame.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div10{
+    background-image: url(img/connorgame.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div11{
+    background-image: url(img/profile-imgs/ivona-fav.jpg);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div12{
+    background-image: url(img/profile-imgs/hesh-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div13{
+    background-image: url(img/profile-imgs/alas-fav.png);
+    background-size: 110% 110%;
+    background-position: center;
+}
+
+.div14{
+    background-image: url(img/profile-imgs/jacob-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div15{
+    background-image: url(img/profile-imgs/ste-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div16{
+    background-image: url(img/profile-imgs/cal-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div17{
+    background-image: url(img/profile-imgs/stef-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div18{
+    background-image: url(img/profile-imgs/sam-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div19{
+    background-image: url(img/profile-imgs/george-fav.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.port-category {
+    background-image: url(img/heychat-screen.png);
+    background-size: cover;
+    margin: 10px;
+    height: 150px;
+    width: 350px;
+    -webkit-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.tint{
+    background: rgba(0,0,0, 0);
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.tint-cat{
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+    transition: all 0.3s;
+}
+
+
+.port-div:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.port-div:hover .tint{
+    background: rgba(0,0,0, 0.5);
+}
+
+.port-category:hover .tint-cat{
+    background: rgba(0,0,0, 0.5);
+}
+
+.port-category:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.port-category:hover .tint{
+    background: rgba(0,0,0, 0.5);
+}
+
+.sponsor-head{
+    font-size: 34px;
+    font-family: 'Quicksand Medium', sans-serif;
+    text-align: center;
+    padding-top: 55px;
+    color: black;
+}
+
+.spons-underline{
+    border: 1px solid #F40085;
+    width: 8%;
+}
+
+.sponsor-img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+    margin-top: 50px;
+}
+
+.sponsor-wrap{
+    margin-left: 0px;
+}
+
+.sponsor-img-touzie{
+    width: auto;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+    margin-top: 40px;
+}
+
+.sponsor-section{
+    background-color: white;
+}
+
+.sponsor-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+      
+}
+
+.img-row-spons{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.sponsor-img-wrap{
+}
+
+.tile-content{
+    visibility: hidden;
+    transition: all 0.05s;
+    padding-top: 50px;
+}
+
+.tile-content-port{
+    transition: all 0.05s;
+    padding-top: 30px;
+}
+
+.port-div:hover .tile-content{
+    visibility: visible;
+    z-index: 1;
+}
+
+.port-category:hover .tile-content-port{
+    visibility: visible;
+    z-index: 1;
+}
+
+
+.tile-header{
+    padding: 0px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.tile-subhead{
+    padding: 0px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.tiles-wrap{
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+.tiles-wrap a{
+    text-decoration: none;
+}
+
+.tile-content hr{
+    border: 1px solid white;
+    width: 60%;
+}
+
+.tile-content-port hr{
+    border: 1px solid white;
+    width: 30%;
+}
+
+.web-tile{
+    background-image: url(img/webmob.png);
+    background-size: cover;
+}
+
+.game-tile{
+    background-image: url(img/games.png);
+    background-size: cover;
+}
+
+.anim-tile{
+    background-image: url(img/anim.png);
+    background-size: cover;
+}
+
+.design-tile{
+    background-image: url(img/game-des.png);
+    background-size: cover;
+}
+
+.sponsor-section{
+    padding-bottom: 50px;
+}
+
+.gh-head{
+    padding-top: 30px;
+    color: white;
+    margin-top: 30px;
+    font-size: 39px;
+    font-family: 'Quicksand Medium', sans-serif;
+    margin-left: -150px;
+}
+
+.gh-underline{
+    border: 2px solid white;
+    margin-left: -150px;
+    width: 10%;
+}
+
+.gh-header{
+    height: 670px;
+    background-image: url(img/gh-bg.png);
+    background-size: cover;
+}
+
+.googlemap{
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    width: 100%;
+    height: 550px;
+    background: #f3f3f3;
+    margin-top: 50px;
+}
+
+.map-wrapper{
+    padding-bottom: 50px;
+}
+
+.contact-section{
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.contact-underline{
+    border: 2px solid #F40085;
+    margin-left: -150px;
+    width: 15%;
+}
+
+.form-wrapper{
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    margin-top: 20px;
+}
+
+.form-text{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 31px;
+    margin-top: 120px;
+}
+
+form{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+.t-boxes{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: #230816;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.subject-text{
+    color: #230816;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.t-boxes::placeholder{
+    color: #230816;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.t-area{
+    height: 246px;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.sub-btn{
+    width: 100%;
+    height: 50px;
+    background-color: #C20472;
+    color: white;
+    border: 0px;
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sub-btn:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 90px;
+    background-color: #C20472;
+    margin-top: 100px;
+}
+
+.footer-name{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.footer-icon-list{
+    list-style: none;
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+    margin-left: -70px;
+}
+
+.footer-icon-list li{
+    display: inline;
+    padding-left: 20px;
+}
+
+.footer-icon img{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.hidden-d{
+    display: none;
+}
+
+/* Profile Page */
+
+.profile-header{
+    height: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ab44e+0,8afbd3+100 */
+background: #2ab44e; /* Old browsers */
+background: -moz-linear-gradient(45deg, #2ab44e 0%, #8afbd3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #2ab44e 0%,#8afbd3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #2ab44e 0%,#8afbd3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab44e', endColorstr='#8afbd3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.profile-body{
+    background: white;
+}
+
+.profile-pic{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -220px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 10px 24px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 24px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 24px -11px rgba(0,0,0,0.75);
+}
+
+.profile-info{
+    margin-top: 20px;
+    font-family: "Quicksand Medium", sans-serif;
+}
+
+.profile-name{
+    text-align: center;
+    font-size: 31px;
+}
+
+.name-underline{
+    width: 100px;
+    border: 1px solid #707070;
+    opacity: 0.4;
+}
+
+.profile-subhead{
+    text-align: center;
+    font-size: 17px;
+    font-family: "Open Sans Regular", sans-serif;
+}
+
+.iconwrapper{
+    margin-left: -55px;
+    text-align: center;
+}
+
+.iconwrapper li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.social-icons{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.profile-seperator{
+    margin-top: 40px;
+}
+
+.profile-subheading{
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: "Quicksand Medium", sans-serif; 
+}
+
+.profile-sub-underline{
+    width: 200px;
+    border: 0;
+    height: 3px;
+    background: #1e5799;
+    background: linear-gradient(to right,  cyan 25%,#EDEDED 25%);
+}
+
+.profile-sub-underline-about{
+    width: 200px;
+    border: 0;
+    height: 3px;
+    background: #1e5799;
+    background: linear-gradient(to right,  blue 25%,#EDEDED 25%);
+}
+
+.profile-sub-underline-proj{
+    width: 200px;
+    border: 0;
+    height: 3px;
+    background: #1e5799;
+    background: linear-gradient(to right,  magenta 25%,#EDEDED 25%);
+}
+
+.feat-work-holder{
+    width: 98%;
+    height: 550px;
+    background: #f3f3f3;
+    margin-top: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-content-wrapper{
+    padding-bottom: 50px;
+}
+
+.portfolio-content{
+    margin: 0px;
+}
+
+.port-div-portfoliopage {
+    background-image: url(img/heychat-screen.png);
+    background-size: cover;
+    margin: 10px;
+    height: 220px;
+    width: 270px;
+    -webkit-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.aboutme-hyper{
+    color: #F40085;
+}
+
+.ghub-logo{
+    height: 30px;
+    width: auto;
+}
+
+.behancelogo{
+    height: 35px;
+    width: auto;
+}
+
+.astation{
+    height: 40px;
+    width: auto;
+}
+
+.blog-logo{
+    height: 50px;
+    width: auto;
+}
+
+
+.tile-content-ppage{
+    visibility: hidden;
+    transition: all 0.05s;
+    padding-top: 50px;
+}
+
+.profpage-text{
+    padding-top: 25px;
+}
+
+.leon-feat{
+    background-image: url(img/profile-imgs/leon-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Kamil Work */
+.kamil-feat{
+    background-image: url(img/profile-imgs/kamil-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-kamil{
+    background-image: url(img/profile-imgs/kamil-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-kamil{
+    background-image: url(img/profile-imgs/kamil-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-kamil{
+    background-image: url(img/profile-imgs/kamil-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Leon Work */
+.leon-feat{
+    background-image: url(img/profile-imgs/leon-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-leon{
+    background-image: url(img/profile-imgs/leon-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-leon{
+    background-image: url(img/profile-imgs/leon-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-leon{
+    background-image: url(img/profile-imgs/leon-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-leon{
+    background-image: url(img/profile-imgs/leon-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-leon{
+    background-image: url(img/profile-imgs/leon-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div6-leon{
+    background-image: url(img/profile-imgs/leon-6.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Cal Work */
+.cal-feat{
+    background-image: url(img/profile-imgs/cal-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-cal{
+    background-image: url(img/profile-imgs/cal-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-cal{
+    background-image: url(img/profile-imgs/cal-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-cal{
+    background-image: url(img/profile-imgs/cal-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+/* Kenneth Work */
+.ken-feat{
+    background-image: url(img/profile-imgs/ken-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-ken{
+    background-image: url(img/profile-imgs/ken-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-ken{
+    background-image: url(img/profile-imgs/ken-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-ken{
+    background-image: url(img/profile-imgs/ken-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-ken{
+    background-image: url(img/profile-imgs/ken-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Darren Work */
+.darren-feat{
+    background-image: url(img/profile-imgs/darren-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-darren{
+    background-image: url(img/profile-imgs/darren-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-darren{
+    background-image: url(img/profile-imgs/darren-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-darren{
+    background-image: url(img/profile-imgs/darren-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Dylan Work */
+.dylan-feat{
+    background-image: url(img/profile-imgs/dylan-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-dylan{
+    background-image: url(img/profile-imgs/dylan-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-dylan{
+    background-image: url(img/profile-imgs/dylan-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-dylan{
+    background-image: url(img/profile-imgs/dylan-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-dylan{
+    background-image: url(img/profile-imgs/dylan-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-dylan{
+    background-image: url(img/profile-imgs/dylan-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Julie Work */
+.julie-feat{
+    background-image: url(img/profile-imgs/julie-1.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-julie{
+    background-image: url(img/profile-imgs/julie-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-julie{
+    background-image: url(img/profile-imgs/julie-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-julie{
+    background-image: url(img/profile-imgs/julie-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-julie{
+    background-image: url(img/profile-imgs/julie-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-julie{
+    background-image: url(img/profile-imgs/julie-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div6-julie{
+    background-image: url(img/profile-imgs/julie-6.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Hesham Work */
+.hesh-feat{
+    background-image: url(img/profile-imgs/hesh-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-hesh{
+    background-image: url(img/profile-imgs/hesh-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-hesh{
+    background-image: url(img/profile-imgs/hesh-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-hesh{
+    background-image: url(img/profile-imgs/hesh-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-hesh{
+    background-image: url(img/profile-imgs/hesh-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Ross Work */
+.ross-feat{
+    background-image: url(img/profile-imgs/ross-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-ross{
+    background-image: url(img/profile-imgs/ross-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-ross{
+    background-image: url(img/profile-imgs/ross-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-ross{
+    background-image: url(img/profile-imgs/ross-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-ross{
+    background-image: url(img/profile-imgs/ross-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Stefan Work */
+.stef-feat{
+    background-image: url(img/profile-imgs/stef-fav.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.div1-stef{
+    background-image: url(img/profile-imgs/stef-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-stef{
+    background-image: url(img/profile-imgs/stef-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Damien Work */
+.dam-feat{
+    background-image: url(img/profile-imgs/dam-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-dam{
+    background-image: url(img/profile-imgs/dam-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-dam{
+    background-image: url(img/profile-imgs/dam-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-dam{
+    background-image: url(img/profile-imgs/dam-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Alasdair Work */
+.alas-feat{
+    background-image: url(img/profile-imgs/alas-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-alas{
+    background-image: url(img/profile-imgs/alas-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-alas{
+    background-image: url(img/profile-imgs/alas-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-alas{
+    background-image: url(img/profile-imgs/alas-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-alas{
+    background-image: url(img/profile-imgs/alas-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Connor Work */
+.con-feat{
+    background-image: url(img/profile-imgs/con-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-con{
+    background-image: url(img/profile-imgs/con-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-con{
+    background-image: url(img/profile-imgs/con-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-con{
+    background-image: url(img/profile-imgs/con-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-con{
+    background-image: url(img/profile-imgs/con-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Ivona Work */
+.ivona-feat{
+    background-image: url(img/profile-imgs/ivona-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-ivona{
+    background-image: url(img/profile-imgs/ivona-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-ivona{
+    background-image: url(img/profile-imgs/ivona-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-ivona{
+    background-image: url(img/profile-imgs/ivona-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-ivona{
+    background-image: url(img/profile-imgs/ivona-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-ivona{
+    background-image: url(img/profile-imgs/ivona-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div6-ivona{
+    background-image: url(img/profile-imgs/ivona-6.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div7-ivona{
+    background-image: url(img/profile-imgs/ivona-7.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* jacob Work */
+.jacob-feat{
+    background-image: url(img/profile-imgs/jacob-fav.png);
+    background-size: cover;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.div1-jacob{
+    background-image: url(img/profile-imgs/jacob-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-jacob{
+    background-image: url(img/profile-imgs/jacob-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-jacob{
+    background-image: url(img/profile-imgs/jacob-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-jacob{
+    background-image: url(img/profile-imgs/jacob-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-jacob{
+    background-image: url(img/profile-imgs/jacob-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Steven Work */
+.ste-feat{
+    background-image: url(img/profile-imgs/ste-fav.png);
+    background-size: cover;
+    background-position: center 0px;
+    cursor: pointer;
+}
+
+.div1-ste{
+    background-image: url(img/profile-imgs/ste-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-ste{
+    background-image: url(img/profile-imgs/ste-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-ste{
+    background-image: url(img/profile-imgs/ste-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-ste{
+    background-image: url(img/profile-imgs/ste-4.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-ste{
+    background-image: url(img/profile-imgs/ste-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Samuel Work */
+.sam-feat{
+    background-image: url(img/profile-imgs/sam-fav.png);
+    background-size: cover;
+    background-position: center 0px;
+    cursor: pointer;
+}
+
+.div1-sam{
+    background-image: url(img/profile-imgs/sam-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-sam{
+    background-image: url(img/profile-imgs/sam-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-sam{
+    background-image: url(img/profile-imgs/sam-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* George Work */
+.george-feat{
+    background-image: url(img/profile-imgs/george-fav.png);
+    background-size: cover;
+    background-position: center 0px;
+    cursor: pointer;
+}
+
+.div1-george{
+    background-image: url(img/profile-imgs/george-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-george{
+    background-image: url(img/profile-imgs/george-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Samuel Work */
+.jack-feat{
+    background-image: url(img/profile-imgs/jack-fav.png);
+    background-size: cover;
+    background-position: center 0px;
+    cursor: pointer;
+}
+
+.div1-jack{
+    background-image: url(img/profile-imgs/jack-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div2-jack{
+    background-image: url(img/profile-imgs/jack-2.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div3-jack{
+    background-image: url(img/profile-imgs/jack-3.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div4-jack{
+    background-image: url(img/profile-imgs/jack-4.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.div5-jack{
+    background-image: url(img/profile-imgs/jack-5.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Profile Showcase Page */
+.showcase-page{
+    padding-bottom: 100px;
+}
+
+.showcase-body{
+    background: white;
+}
+
+.showcase-jumbo{
+    width: 100%;
+    height: 200px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ad343+1,cafc88+100 */
+background: #2ad343; /* Old browsers */
+background: -moz-linear-gradient(45deg, #2ad343 1%, #cafc88 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #2ad343 1%,#cafc88 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #2ad343 1%,#cafc88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ad343', endColorstr='#cafc88',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.showcase-jumbo-web{
+    width: 100%;
+    height: 200px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6925bc+0,6471ba+100 */
+background: #6925bc; /* Old browsers */
+background: -moz-linear-gradient(45deg, #6925bc 0%, #6471ba 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #6925bc 0%,#6471ba 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #6925bc 0%,#6471ba 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6925bc', endColorstr='#6471ba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.jumbo-header{
+    font-size: 40px;
+    font-family: "Open Sans Bold", sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-top: 60px;
+}
+
+.showcase-wrapper{
+    margin-top: 70px;
+}
+
+.profile-showcase{
+    width: 400px;
+    height: 239px;
+    
+}
+
+.profile-spacer{
+    margin-top: 20px;
+}
+
+.showcase-img-alis{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/alas-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-kamil{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/kamil-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-leon{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/leon-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-ken{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/ken-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-darren{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/darren-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-dylan{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/dylan-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-julie{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/julie-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-ross{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/ross-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-damien{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/dam-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-connor{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/con-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-hesh{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/hesh-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-jack{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/jack-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-jacob{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/jacob-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-ivona{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/ivona-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-sam{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/sam-1.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-cal{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/cal-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-ste{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/ste-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-stef{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/stef-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-sam{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/sam-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-img-george{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/profile-imgs/george-fav.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.showcase-topper{
+    list-style: none;
+    margin-left: -39px;
+}
+
+.showcase-topper li{
+    display: inline-block;
+}
+
+.showcase-result{
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 20px;
+}
+
+.showcase-title{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 25px;
+}
+
+.showcase-subtitle{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 22px; 
+    color: #BA0685;
+}
+
+.showcase-content-wrapper{
+       
+}
+
+.profile-desc{
+    height: 100px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+.visit-button{
+    position: absolute;
+    left:    0;
+    bottom:   0;
+    border: 1px solid;
+    background: transparent;
+    padding: 10px;
+    border-color: #BA0685;
+    color: #BA0685;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 15px;
+}
+
+.visit-button:hover{
+    background: #BA0685;
+    border-color: #BA0685;
+    color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1509px) {
+  
+    .port-category{
+        width: 250px;
+        height: 130px;;
+    }
+    
+    .tile-header{
+        font-size: 18px;
+    }
+    
+    .tile-subhead{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1509px) {
+  
+    .port-category{
+        width: 250px;
+        height: 130px;;
+    }
+    
+    .tile-header{
+        font-size: 18px;
+    }
+    
+    .tile-subhead{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1171px) {
+  
+    .sponsor-img{
+        width: 150px;
+        height: auto;
+    }
+    
+    .sponsor-img-touzie{
+        width: auto;
+        height: 100px;
+    }
+    
+    .nav-item{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  
+    .about-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .nav-item{
+        font-size: 15px;
+    }
+    
+    .logo{
+        width: 500px;
+        height: auto;
+    }
+    
+    header{
+        height: 220px;
+    }
+    
+    .nav{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  
+    .visit-button{
+        margin: 0px;
+        position: relative;
+    }
+    
+    .port-title{
+        margin-left: 0px;
+        font-size: 34px;
+    }
+    
+    .port-underline{
+        margin-left: 0px;
+    }
+    
+    .category-title{
+        font-size: 25px;
+        margin: 0px;
+    }
+    
+    .sponsor-wrap{
+        margin-left: 0px;
+    }
+    
+    .gh-head{
+        margin: 0px;
+        font-size: 34px;
+    }
+    
+    .gh-underline{
+        margin-left: 0px;
+    }
+    
+    .googlemap{
+        width: 80%;
+    }
+    
+    .contact-underline{
+        margin-left: 0px;
+    }
+    
+    .map-wrapper{
+        padding-bottom: 0px;
+    }
+    
+    .contact-section{
+        padding-top: 50px;
+    }
+    
+    .form-text{
+        font-size: 22px;
+    }
+    
+    .port-main-content{
+        width: 100%;
+    }
+    
+    .contact-head{
+        margin-top: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 625px) {
+  
+    .nav-item{
+        font-size: 12px;
+    }  
+    
+    .about-padding{
+        padding: 0px;
+    }
+    
+    .form-wrapper{
+        max-width: 90%;
+    }
+    
+    .t-boxes{
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .t-area{
+        height: 150px;
+    }
+    
+    .sub-btn{
+        font-size: 20px;
+        height: 40px;
+    }
+    
+    .feat-work-holder{
+        height: 300px;
+    }
+    
+    .port-div-portfoliopage {
+    background-size: cover;
+    margin: 10px;
+    height:250px;
+    width: 350px;
+    -webkit-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 9px -1px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+    
+    .jumbo-header{
+        font-size: 30px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media only screen and (max-width: 827px) {
+    
+    .googlemap{
+        height: 500px;
+        width: 92%;
+        margin-top: 50px;
+    }
+    
+    .gh-header{
+        height: 600px;
+    }
+    
+    .gh-head{
+        padding-top: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 536px) {
+    
+    .nav{
+        margin-top: -10px;
+    }
+    
+    .nav-item{
+        font-size: 10px;
+    }
+    
+    .dropdown-content a{
+        font-size: 12px;
+    }
+    
+    .logo{
+        width: 350px;
+        height: auto;
+    }
+    
+    .partner-text{
+        font-size: 15px;
+    }
+    
+    .uws-logo{
+        width: 100px;
+        height: auto;
+    }
+    
+    header{
+        height: 160px;
+    }
+    
+    .vert-hr{
+        height: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 467px) {
+    
+    header{
+        height: 160px;
+        text-align: center;
+    }
+    
+    .showcase-title{
+        font-size: 15px;
+    }
+    
+    .showcase-subtitle{
+        font-size: 15px;
+    }
+    
+    .profile-desc{
+        font-size: 13px;
+    }
+    
+    .visit-button{
+        width: 150px;
+        height: 30px;
+        font-size: 13px;
+        padding: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .port-div-portfoliopage{
+        width: 270px;
+        height: 190px;
+    }
+    
+    .footer-name{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    
+    .footer-icon img{
+        height: 25px;
+        width: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 379px) {
+    
+    .dropdown-content{
+        margin-left: -50px;
+    }
+    
+    header{
+        height: 210px;
+    }
+    
+    .nav{
+        margin-top: 5px;
+    }
+    
+}
